@@ -70,7 +70,7 @@ body {
 
 .gallery__item {
     max-width: 330px;
-
+    position: relative;
 }
 
 .image {
@@ -96,4 +96,34 @@ body {
     margin: auto;
     font-size: 40px;
     color: white;
+}
+
+.card-button {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+}
+
+.card-button svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-button:hover .center {
+    fill-opacity: 0.8;
+
+}
+.card-button--like {
+    bottom: 20px;
+    right: 25px;
+    
+}
+
+
+.card-button--tab {
+    bottom: 20px;
+    right: 80px;
 }
